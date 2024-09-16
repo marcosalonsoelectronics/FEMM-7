@@ -1,0 +1,103 @@
+[Format]      =  1
+[Precision]   =  1.0000000000000001e-009
+[MinAngle]    =  30
+[DoSmartMesh] =  1
+[Depth]       =  100
+[LengthUnits] =  millimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[PrevSoln] = ""
+[dT] = 0
+[Comment]     =  "Add comments here."
+[PointProps]   = 1
+  <BeginPoint>
+    <PointName> = "heat_flux_point"
+    <Tp> = 0
+    <qp> = 10
+  <EndPoint>
+[BdryProps]   = 1
+  <BeginBdry>
+    <BdryName> = "Air_boundary"
+    <BdryType> = 2
+    <Tset> = 0
+    <qs>   = 0
+    <beta> = 0
+    <h>    = 10
+    <Tinf> = 298
+  <EndBdry>
+[BlockProps]  = 2
+  <BeginBlock>
+    <BlockName> = "Aluminum, Pure"
+    <Kx> = 236
+    <Ky> = 236
+    <Kt> = 2.4500000000000002
+    <qv> = 0
+    <TKPoints> = 4
+      273	236
+      473	238
+      673	228
+      873	215
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Copper, Pure"
+    <Kx> = 401
+    <Ky> = 401
+    <Kt> = 3.4380000000000002
+    <qv> = 25000000
+    <TKPoints> = 6
+      273	401
+      473	389
+      673	378
+      873	366
+      1073	352
+      1273	336
+  <EndBlock>
+[ConductorProps]  = 0
+[NumPoints] = 20
+0	0	0	0	0
+0	19	0	0	0
+2.1000000000000001	19	0	0	0
+2.1000000000000001	3	0	0	0
+6.4500000000000002	3	0	0	0
+8.5500000000000007	19	0	0	0
+8.5500000000000007	3	0	0	0
+12.9	3	0	0	0
+12.9	19	0	0	0
+6.4500000000000002	19	0	0	0
+15	19	0	0	0
+15	3	0	0	0
+19.350000000000001	3	0	0	0
+19.350000000000001	19	0	0	0
+21.449999999999999	19	0	0	0
+21.449999999999999	0	0	0	0
+8.7250000000000014	0	0	0	0
+12.725	0	0	0	0
+12.725	-1	0	0	0
+8.7250000000000014	-1	0	0	0
+[NumSegments] = 21
+0	1	-1	1	0	1	0
+2	1	-1	1	0	1	0
+2	3	-1	1	0	1	0
+3	4	-1	1	0	1	0
+4	9	-1	1	0	1	0
+9	5	-1	1	0	1	0
+6	5	-1	1	0	1	0
+6	7	-1	1	0	1	0
+7	8	-1	1	0	1	0
+8	10	-1	1	0	1	0
+10	11	-1	1	0	1	0
+11	12	-1	1	0	1	0
+12	13	-1	1	0	1	0
+13	14	-1	1	0	1	0
+14	15	-1	1	0	1	0
+16	0	-1	1	0	1	0
+16	17	-1	0	0	0	0
+17	15	-1	1	0	1	0
+19	16	-1	1	0	0	0
+19	18	-1	1	0	0	0
+17	18	-1	1	0	0	0
+[NumArcSegments] = 0
+[NumHoles] = 0
+[NumBlockLabels] = 2
+3.3999999999999999	1.5	1	-1	0	0
+10.6	-0.5	2	-1	0	0
